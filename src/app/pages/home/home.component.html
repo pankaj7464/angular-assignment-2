@@ -1,0 +1,18 @@
+<section class="home-container">
+  <app-carousel></app-carousel>
+  <section class="content-container">
+    <section class="slide__list">
+      <h2>Added slides</h2>
+      
+      <ul>
+        @for (slide of slides; track $index) {
+        <li class="slide__list__item" >
+          <span>Slide {{ $index + 1 }} </span>
+          <mat-icon (click)="deleteSlide($index)">delete</mat-icon>
+        </li>
+        }
+      </ul>
+    </section>
+    <app-new-slide-form></app-new-slide-form>
+  </section>
+</section>
