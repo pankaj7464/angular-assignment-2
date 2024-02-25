@@ -1,7 +1,7 @@
 <section id="image-carousel" class="splide">
   <div class="splide__track">
     <div class="btn__slider">
-      <span (click)="navigateBackward()" class="prev-arrow"
+      <span (click)="navigateBackward()"  class="prev-arrow"
         ><mat-icon>keyboard_arrow_left</mat-icon></span
       >
       <span (click)="navigateForward()" class="forw-arrow"
@@ -23,7 +23,7 @@
 
     <div class="dot__indicator__list">
       @for (slide of slides; track $index) {
-      <span class="dot" [class.active]="$index === activeSlideIndex"></span>
+      <span class="dot"  [class.active]="$index === activeSlideIndex"></span>
       }
     </div>
   </div>
