@@ -5,6 +5,8 @@ import { Carousel } from '../models/carousel.interface';
   providedIn: 'root',
 })
 export class CarouselService {
+
+  // Initial Data seeding 
   CarouselList: Carousel[] = [
     {
       imageUrl:
